@@ -6,7 +6,6 @@ window.onload = function(){
     let fondo = document.querySelector('body');
     let enlace = document.querySelector('a');
     
-    
     let nombre = prompt('Ingrese su nombre');
     console.log(nombre);
     if(nombre !=''){
@@ -31,4 +30,16 @@ window.onload = function(){
     }
     
 
-    container.style.display = 'bloc
+    container.style.display = 'block';
+
+    let $lateral = document.querySelector('.logoDH');
+    let $ocultar = document.querySelector('#menu');
+
+    $lateral.addEventListener('click', ()=>{
+        $lateral.classList.toggle('mostrar')
+    })
+
+    $ocultar.addEventListener ('mouseout', () => {
+        $ocultar.classList.remove('mostrar')
+    })
+}

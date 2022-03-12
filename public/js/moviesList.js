@@ -1,9 +1,15 @@
 window.onload = function(){
     let body = document.querySelector('body');
     let moviesListTitulo = document.querySelector('.moviesListTitulo');
+    let $modoHover = document.querySelector('figure img')
 
-    let modo = confirm('Desea modo oscuro');
+    /* let modo = confirm('Desea modo oscuro');
     if(modo){
+        body.style.backgroundColor = '#7f7f7f'
+        body.classList.add('fondoMoviesList');
+    } */
+
+    $modoHover.onmouseover = () =>{
         body.style.backgroundColor = '#7f7f7f'
         body.classList.add('fondoMoviesList');
     }
