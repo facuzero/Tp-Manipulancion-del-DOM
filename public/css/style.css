@@ -121,3 +121,7 @@ figure {
   display: block;
   width: 40px;
 }
+.is-invalid{
+  color:floralwhite;
+  font-weight: bold;
+}

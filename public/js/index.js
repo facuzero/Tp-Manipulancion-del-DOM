@@ -35,8 +35,9 @@ window.onload = function(){
     let $lateral = document.querySelector('.logoDH');
     let $ocultar = document.querySelector('#menu');
 
-    $lateral.addEventListener('click', ()=>{
-        $lateral.classList.toggle('mostrar')
+    $lateral.addEventListener('click', (e)=>{
+        console.log(e.target)
+        $ocultar.classList.toggle('mostrar')
     })
 
     $ocultar.addEventListener ('mouseout', () => {
